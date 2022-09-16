@@ -9,7 +9,10 @@ public class TestJuego {
         Robot rbt = new Robot();
         
         rbt.recargar();
-        h1.jugarConRobot(rbt);
-        h2.jugarConRobot(rbt);
+        System.out.println("-----Primer hombre----");
+        h1.jugarConRobot(rbt, 500, 20);
+        
+        System.out.println("--Segundo Hombre---");
+        h2.jugarConRobot(rbt, 300, 200);
     }
 }

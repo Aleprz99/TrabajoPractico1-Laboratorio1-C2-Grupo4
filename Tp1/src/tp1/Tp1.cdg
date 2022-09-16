@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Tp1">
   <ClassDiagramComponents>
-    <Class name="Bateria" package="tp1" visibility="public" xPosition="224.0" yPosition="191.0">
+    <Class name="Bateria" package="tp1" visibility="public" xPosition="417.0" yPosition="374.0">
       <Fields>
         <Field name="Carga" type="double" visibility="protected"/>
       </Fields>
@@ -44,7 +44,7 @@
         <Method name="energiaActual" returnType="double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="TestJuego" package="tp1" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="TestJuego" package="tp1" visibility="public" xPosition="9.0" yPosition="349.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -57,5 +57,7 @@
   <ClassDiagramRelations>
     <HasRelation name="bat" source="tp1.Robot" target="tp1.Bateria" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="tp1.Hombre" target="tp1.Robot" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="tp1.TestJuego" target="tp1.Robot" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="tp1.TestJuego" target="tp1.Hombre" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
